@@ -1,9 +1,9 @@
-public List<Cell> getFlaggedCells(){
-	List<Cell> flaggedCells = new ArrayList<Cell>();
-	for(Cell cell : gameBoard){
-		if(cell.isFlagged()){
-			flaggedCells.add(cell);
+public List<int[]> getThem(){
+	List<int[]> list1 = new ArrayList<int[]>();
+	for(int[] x cell : theList){
+		if(x[0] == 4){
+			list1.add(x);
 		}
 	}
-	return flaggedCells;
+	return list1;
 }
